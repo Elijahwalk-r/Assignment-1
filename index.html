@@ -25,54 +25,52 @@
                     <li> <a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-
-            <h1>Thunder Force Stadium</h1>
-
-            <h2>presented by hot cops</h2>
+            <h1 id="home">Thunder <span>Force</span> Stadium</h1>
+            <h3>presented by hot cops</h3>
         </div>
         <!-- end of wrapper -->
     </header>
     <!-- end of header -->
     <main>
-        <section class="line-up">
+        <section id="about" class="line-up">
             <div class="wrapper">
                 <div class="line-up-container">
-                    <h3>Performing Line Up</h3>
+                    <div class="line-up-text">
+                        <h2>Performing Line Up</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores fuga voluptatibus delectus cumque beatae eius voluptate vel culpa repellendus. Quia debitis unde quisquam, totam, explicabo temporibus, provident nihil deserunt commodi dolorem aliquid?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores fuga voluptatibus delectus cumque beatae eius voluptate vel culpa repellendus. Quia debitis unde quisquam, totam, explicabo temporibus, provident nihil deserunt commodi dolorem aliquid?</p>
 
-                    <button>Read More</button>
+                        <button>Read More</button>
+                    </div>
+                    <div class="line-up-img">
+                        <img src="./thunder-force-stadium/assets/image-2_2@2x.png" alt="An image of a person singing with a mic in their hand">
+                    </div>
                 </div>
-                <div class="line-up-img">
-                    <img src="./thunder-force-stadium/assets/image-2_2@2x.png" alt="An image of a person singing with a mic in their hand">
-                </div>
-            </div>
-                <!-- end of wrapper -->
-        </section>
-            <!-- end of section -->
-        <section>
-            <div class="wrapper">
-                <div class="experiences-img">
-                    <img src="./thunder-force-stadium/assets/image-2-copy@2x.png" alt="A close-up picture of a glossy Saxophone">
-                </div>
-                <div class="experiences">
-                    <h3>New Experiences</h3>
+                    <!-- end of first container within section -->
+                <div class="experiences-container">
+                   <div class="experiences-img">
+                        <img src="./thunder-force-stadium/assets/image-2-copy@2x.png" alt="A close-up picture of a glossy Saxophone">
+                    </div>
+                    <div class="experiences">
+                        <h2>New Experiences</h2>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi tenetur labore aliquid. Vel assumenda illum aut eius sit quibusdam veniam iste expedita inventore? Ex ullam ut cupiditate? Porro incidunt nihil a non.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi tenetur labore aliquid. Vel assumenda illum aut eius sit quibusdam veniam iste expedita inventore? Ex ullam ut cupiditate? Porro incidunt nihil a non.</p>
 
-                    <button>Read More</button>
-                </div>
+                        <button>Read More</button>
+                    </div> 
+                </div> 
+                    <!-- end of experiences container -->
             </div>
                 <!-- end of wrapper -->
         </section>
                 <!-- end of section -->
-        <section>
+        <section class="get-tickets">
             <div class="wrapper">
                 <div class="tickets-img">
                     <img src="./thunder-force-stadium/assets/image-6@2x.png" alt="A Picture from the crowd of a concert venue with red beaming spot lights">
                 </div>
                 <div class="tickets">
-                    <h3>Get Your Tickets</h3>
+                    <h2>Get Your Tickets</h2>
 
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In laudantium atque consequuntur id saepe vitae possimus consectetur dolores? Ea reiciendis, maxime dolorum repellendus a mollitia recusandae facere quo eligendi blanditiis! Ducimus deleniti ipsa sequi facilis, eveniet necessitatibus illo explicabo recusandae nulla alias vel saepe, facere quibusdam magni adipisci voluptates fugiat autem dolore culpa. Itaque assumenda consectetur ex ipsum velit, magni perspiciatis labore quidem!</p>
 
@@ -83,23 +81,21 @@
         </section>
                 <!-- end of section -->
 
-        <aside>
+        <aside class="icon">
             <div class="wrapper">
-                <img src="./thunder-force-stadium/assets/image-5@2x.png" alt="An icon of a solid arrow tip">
+             
                 <h4>Locations</h4>
 
-                <img src="" alt="">
                 <h4>Tickets</h4>
 
-                <img src="" alt="">
                 <h4>Reach Out</h4>
             </div>
                 <!-- end of wrapper -->
         </aside>
             <!-- end of aside -->
-        <aside class="gram">
+        <aside id="blog" class="gram">
             <div class="wrapper">
-                <h3>The Gram</h3>
+                <h2>The Gram</h2>
                 <div class="gram-img">
                     <img src="./thunder-force-stadium/assets/image-2@2x.png" alt="A Picture from the upper teirs of a stadium concert filled with people and confetti falling from the roof.">
 
@@ -111,7 +107,7 @@
                 <!-- end of wrapper -->
         </aside>
                 <!-- end of aside -->
-        <aside>
+        <aside class="form">
             <div class="wrapper">
                 <nav>
                     <ul>
@@ -124,20 +120,21 @@
 
                 <div class="update-container">
                     <div class="contact">
-                        <h3>Contact</h3>
+                        <h2 id="contact">Contact</h2>
 
                         <p>info@email.com | 123 - 456 - 7890</p>
                         <p>123 some road, Toronto, ON</p>
                         <p>A5A 5A5, Canada</p>
                     </div>
                     <div class="update">
-                        <h3>Stay Updated</h3>
+                        <h2>Stay Updated</h2>
                         <form action="submit">
                             <label for="email">Subscribe to our newsletter to stay updated</label>
-                            <input type="email" name="email" id="email">
+                            <div class="form-container">
+                                <input type="email" name="email" id="email" placeholder="email address"> <button type="submit">Subscribe</button>
+                            </div>
                         </form>
-                        <button type="submit">Subscribe</button>
-
+                       
                     </div>
                 </div>
             </div>
