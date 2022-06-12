@@ -47,49 +47,54 @@ html{
         color: #FFFFFF;
 }
 body{
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 29px;
 }
 p{
         text-transform: none;
+        font-weight: normal;
 }
 label{
         text-transform: none;
 }
 .wrapper{
-        max-width: 1200px ;
+        max-width: 1500px;
         width: 90%;
         margin: 0 auto;
 }
 h1{
         font-family: 'Iceberg', cursive;
-        font-size: 8rem;
+        font-size: 6.4rem;
+        font-weight: normal;
         line-height: 80px;
         text-align: center;
         margin: 0;
 }
 h2{
         font-family: 'Iceberg', cursive;
-        font-size: 5.2rem;
+        font-size: 4.16rem;
+        font-weight: normal;
         text-transform: uppercase;
-
+        margin: 0;
+        line-height: 40px;
 }
 h3{
         font-family: 'Montserrat', sans-serif;
-        font-size: 3.5rem;
+        font-size: 2.8rem;
+        font-weight: normal;
         text-align: center;
         text-transform: lowercase;
         margin: 0;
 }
 h4{
         font-family: 'Montserrat', sans-serif;
-        font-size: 3rem;
+        font-size: 2.4rem;
         text-align: center;
         font-weight: 700;  
 }
 button {
         font-family: 'Iceberg', cursive;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-align: center;
         line-height: 29px;
         text-transform: uppercase;
@@ -114,6 +119,8 @@ img{
 header{
         background-image: url(./thunder-force-stadium/assets/image-1.png);
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         height: 100vh;
 }
 header .wrapper{
@@ -121,6 +128,9 @@ header .wrapper{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+}
+h1{
+        margin-top: 100px;
 }
 h1 span{
         display: block;
@@ -152,20 +162,20 @@ a {
     /*#region SECTION LINE UP STYLES */
  .line-up{
          background-color: #0F0632;
+         height: 100%;
  }   
  .line-up ul{
          display: flex; 
          flex-wrap: wrap;  
+         width: 100%;
  }
  .line-up li{
          width: calc(100% / 2);
+         height: calc(100% / 2);
  }
- .line-up-text .wrapper{
-       padding: 75px 80px 0 75px;
-       width: 100%;
- }
-
-    
+.line-up-text .wrapper{
+        margin-top: 150px;
+}   
     /*#endregion  */
 
     /*#region SECTION TICKETS STYLES */
@@ -174,32 +184,23 @@ a {
  }   
  .get-tickets .wrapper{
          display: flex;
- }
-
-.tickets h2{
-        margin: 0;
-}
- .tickets-img{
-         width: 25%;
+         align-items: center;
+         justify-content: flex-start;
+         height: 100%;
+         padding: 55px 0 55px 0;
  }
  .tickets{
          width: 75%;
  }
- .tickets-img,
- .tickets{
-         margin: 70px 0 70px 0;
- }
-
  .tickets-img{
-         margin-right: 30px;
+        width: 25%;
+        margin-right: 30px;
  }
  .tickets-img img{
-         /* QUESTION TO FIT IMG INSIDE MY DIV */
-         height: 100%;
          object-fit: cover;
-
  }
-    
+
+
     /*#endregion  */
 
     /*#region ASIDE ICON STYLES */
@@ -213,8 +214,8 @@ a {
          display: flex;
          justify-content: center;
  }
- .wrapper h4{
-         margin-top: 0;
+ .icon h4{
+         margin-top: 10px;
  }
  i{
          color: white;
@@ -222,16 +223,12 @@ a {
  }
  .icon ul{
          display: flex;
-         flex-wrap: wrap;
  }
  .icon li{
-         width: calc(100% / 3);
         text-align: center;
+        margin-right: 60px;
  }
- .icon-img{
-         width: 100%;
-         height: 60%;
- }
+
     /*#endregion  */
 
     /*#region ASIDE GRAM STYLES  */
@@ -303,5 +300,166 @@ footer p{
 /*#endregion  */
 
 /*#region MEDIA QUERIES STYLES  */
+@media(max-width: 1330px){
+        /*#region First Section Media Queries*/
+        .line-up ul{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+        }
+        .line-up li{
+                width: 100%;
+                margin-bottom: 40px;
+        }
+       .line-up-text .wrapper{
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+        }
+        .singing img,
+        .saxophone img{
+                width: 100%;
+                height: 500px;
+                object-fit:cover;
+        }
+        .line-up button{
+               align-self: center;   
+        }
+        .singing{
+                order: -1;
+        }
+        h2{
+                font-size:3.2rem ;
+        }  
+        /*#endregion */ 
+}
 
+@media(max-width:790px){
+        /*#region HEADER MEDIA QUERIES*/
+        header {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                height: 100vh;
+        }
+        
+        header nav {
+                visibility: hidden;
+        }
+        
+        h1 {
+                margin-top: 5%;
+                font-size: 6rem;
+        }
+        
+        h3 {
+                margin-top: 15px;
+                font-size: 2.5rem;
+                padding: 12px 12px 12px 12px;
+        }
+        /*#endregion MEDIA QUERIES*/
+        /*#region Second Section Media Queries*/
+                .get-tickets .wrapper {
+                        flex-direction: column;
+                }
+                
+                .tickets-img {
+                        width: 100%;
+                        margin: 0 0 50px 0;
+                }
+                
+                .tickets-img img {
+                        margin: 0 auto;
+                }
+                
+                .tickets {
+                        display: flex;
+                        flex-direction: column;
+                }
+                
+                .tickets button {
+                        align-self: center;
+                        padding: 10px 60px 10px 60px;
+                }
+                
+                /*#endregion */
+        /*#region ICON Aside Media Queries*/
+                .icon {
+                        height: 100vh;
+                }
+                
+                .icon .wrapper {
+                        height: 100%;
+                        padding: 90px;
+                }
+                
+                .icon ul {
+                        flex-direction: column;
+                        justify-content: space-between;
+                }
+                
+                .icon li {
+                        margin: 0 0 30px 0;
+                }
+                .icon h4 {
+                        margin-bottom: 0;
+                }  
+                /*#endregion */
+        /*#region BLOG Aside Media Queries*/
+                .gram-img :nth-child(3) {
+                        display: none;
+                }
+                
+                .gram-img {
+                        margin-top: 40px;
+                }
+                
+                .gram-img img {
+                        width: calc(100% / 2);
+                        margin: 0 10px 0 0;
+                }
+                
+                /*#endregion*/
+        /*#region FORM Aside Media Queries*/
+                .form ul {
+                        display: flex;
+                        justify-content: space-between;
+                }
+                
+                .update-container,
+                .contact,
+                .update,
+                .form-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                }
+                
+                .contact {
+                        margin-bottom: 60px;
+                }
+                
+                .contact p {
+                        margin-bottom: 0;
+                }
+                
+                input {
+                        margin-top: 20px;
+                        text-align: center;
+                }
+                
+                .update h2 {
+                        margin-bottom: 15px;
+                }
+                
+                .form-container button {
+                        width: 100%;
+                        margin-top: 10px;
+                }
+                
+                /*#endregion*/
+}
 /*#endregion  */
+
